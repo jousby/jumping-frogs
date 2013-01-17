@@ -1,0 +1,64 @@
+body {
+	background-color:  #E3DCC0 !important; 
+}
+
+#headingRow {
+	margin:  25px 0px 0px 0px !important;  
+    text-align: center;
+}
+
+#mainHeading {
+	font-family: 'Risque', cursive;
+	font-size: 50px;
+    margin-bottom:  25px !important;  
+}
+
+#gameStartRow {
+    margin: 100px 0px 0px 0px;    
+}
+
+
+#gameBoardRow {
+    margin: 100px 0px 0px 0px;
+}
+#gameControls {
+    margin: 50px 0px 0px 0px;
+}
+
+.span12 {
+    margin: 0px !important;	
+}
+
+#frogs {
+    margin: 0px !important;
+}
+
+#frogs li {
+	display: inline;
+}
+
+
+#frogs li i {
+    text-decoration: none;
+}
+
+.frogHolder {	
+    display: inline-block !important; 
+    margin: 0px 5px 0px 5px;
+}
+
+.moveable { 
+	
+}
+
+#frogListHolder p {
+	margin-top:  10px;
+}
+
+#resetButtonDiv {
+	text-align: centre;
+}
+
+.moveable:hover {
+    opacity: 0.6 !important; 
+}

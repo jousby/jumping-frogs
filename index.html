@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Jumping Frogs</title>
+    
+    <link rel="stylesheet" media="screen" href="css/main.css">
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    
+    <link href='http://fonts.googleapis.com/css?family=Risque' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/game.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  </head>
+  
+  <body>    
+    <div class="container">
+    
+      <div class="row" id="headingRow">
+        <h1 id="mainHeading">Jumping Frogs</h1>
+        <p>
+          Can you move the frogs on the left to the right hand side </br> 
+          and the frogs on the right to the left hand side?
+        </p>
+        <p> RULES: </p>
+        <p> 
+          A frog can only move in the direction it is facing. </br>
+          A frog can step into the empty space if it is adjacent. </br>
+          A frog can jump over another frog into the empty space on the other side.
+        </p>      
+      </div>
+    
+      <div class="row" id="gameStartRow">        
+        <div class="span6 offset3">            
+            <form id="startGameForm" class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label" for="numberOfFrogsInput">Number of Frogs:</label>
+                <div class="controls">
+                  <input type="number" id="numberOfFrogsInput" value="4" min="2" step="2">
+                  <span class="help-block">Number of frogs needs to be even</span>
+                </div>
+              </div>            
+              <div class="control-group">
+                <div class="controls">
+                  <button id="submitButton" type="submit" class="btn">Start</button>
+                </div>
+              </div>
+            </form>              
+        </div>
+      </div>
+    
+      <div class="row" id="gameBoardRow">
+        <div id="frogListHolder" class="span12 pagination-centered">           
+          <ul id="frogs">
+          </ul>                       
+        </div>
+      </div>
+      
+      <div class="row" id="gameControls">
+        <div class="span12 pagination-centered">
+          <button id="resetButton" class="btn">Start Again</button>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+    
+</html>
